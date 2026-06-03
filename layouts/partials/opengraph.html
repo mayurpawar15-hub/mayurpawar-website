@@ -8,12 +8,15 @@ default (index hugo.Data site.Language.Lang).site.description }}
 <meta property="og:title" content="{{ $title }}" />
 <meta property="og:type" content="{{ $type }}" />
 <meta property="og:description" content="{{ $description }}" />
+<meta property="og:site_name" content="{{ site.Title }}" />
 {{- with .Params.images -}}
   <meta property="og:image" content="{{ index . 0 | absURL }}">
+  <meta property="og:image:alt" content="{{ $title }}">
 {{- else -}}
   {{- $image := (index hugo.Data site.Language.Lang).site.openGraph.image | default (index hugo.Data site.Language.Lang).author.image }}
   {{- with $image }}
     <meta property="og:image" content="{{ . | absURL }}">
+    <meta property="og:image:alt" content="Mayur Shankar Pawar SAP Finance Manager">
   {{ end -}}
 {{- end -}}
 <meta property="og:url" content="{{ $url }}">

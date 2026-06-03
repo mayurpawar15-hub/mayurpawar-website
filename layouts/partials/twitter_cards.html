@@ -1,0 +1,18 @@
+{{ $siteData := index hugo.Data site.Language.Lang }}
+{{ $siteConfig := $siteData.site }}
+{{ $openGraph := $siteConfig.openGraph }}
+{{ $title := .Params.title | default $openGraph.title | default site.Title }}
+{{ $description := .Params.description | default $openGraph.description | default $siteConfig.description }}
+{{ $image := "" }}
+{{ with .Params.images }}
+  {{ $image = index . 0 }}
+{{ else with $openGraph.image }}
+  {{ $image = . }}
+{{ else with $siteData.author.image }}
+  {{ $image = . }}
+{{ end }}
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="{{ $title }}" />
+{{ with $description }}<meta name="twitter:description" content="{{ . }}" />{{ end }}
+{{ with $image }}<meta name="twitter:image" content="{{ . | absURL }}" />{{ end }}

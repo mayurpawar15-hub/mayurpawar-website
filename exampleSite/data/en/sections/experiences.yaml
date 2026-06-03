@@ -26,12 +26,12 @@ experiences:
     # end: Dec 2020
     # give some points about what was your responsibilities at the company.
     responsibilities:
-    - Lead the financial workstream for the SAP aspects of the demerger, defining a roadmap for separating financial structures, reporting entities, and master data.
+    - Lead the SAP Finance workstream for demerger and carve-out activities, defining a roadmap for separating financial structures, reporting entities, and master data.
     - Collaborate with legal, tax, and corporate finance teams to understand the target operating models for each new entity.
-    - Identify SAP Finance objects impacted by the demerger (e.g., company codes, controlling areas, cost centers, profit centers, segments).
-    - Oversee the carve-out and migration of finance data — historical and open — to the new SAP environments or clients.
+    - Identify SAP FICO and SAP S/4HANA Finance objects impacted by the demerger, including company codes, controlling areas, cost centers, profit centers, segments, and reporting structures.
+    - Oversee carve-out and migration of historical and open finance data to new SAP environments or clients while protecting reconciliation, auditability, and reporting continuity.
     - Ensure data consistency, integrity, and auditability during the transition.
-    - Coordinate with technical teams on tools and strategies (e.g., SAP Landscape Transformation, custom migration tools).
+    - Coordinate with technical teams on SAP Landscape Transformation, custom migration tools, interface impacts, and downstream finance reporting dependencies.
     - Lead the finance track during cutover planning and execution to ensure a smooth transition with minimal business disruption.
 
   # - designation: Junior Software Engineer
@@ -55,11 +55,11 @@ experiences:
     start: May 2022
     end: Jan 2025
     responsibilities:
-    - Analyzed impact and worked on subsequent implementation of ledger and local currency, one of the unique solutions provided to client which helped then to utilize existing ~200 company codes.
-    - Acted as subject matter expert in client meetings, providing guidance on best practices for utilizing SAP FICO module.
-    - Led a team of 7 people and delivered and worked on configuration items such as Enterprise structure, Validation and Substitutions, IC configuration, FX Val etc.
-    - Awarded with Outstanding award to close critical Go-Live path items and helped team to make multiple successful go lives.
-    - Coached junior resources to complete deliverables and helped them with SAP best practices.
+    - Analyzed and delivered subsequent implementation of ledger and local currency in SAP S/4HANA Finance, helping the client retain and extend an existing landscape of approximately 200 company codes.
+    - Acted as SAP FICO subject matter expert in client meetings, providing guidance on finance configuration, Universal Journal considerations, and SAP best practices.
+    - Led a team of 7 consultants across enterprise structure, validations and substitutions, intercompany configuration, foreign exchange valuation, and related SAP Finance deliverables.
+    - Received an Outstanding award for closing critical go-live path items and supporting multiple successful SAP go-lives.
+    - Coached junior resources on SAP FICO configuration, delivery quality, and finance transformation best practices.
     - Identified and resolved process bottlenecks, reducing processing time by 15% and improving customer
       satisfaction.
     - Analyzed existing process scenarios and prepared new business blueprints.
@@ -79,8 +79,8 @@ experiences:
     - Led Digital Accounting thread in video game industry.
     - Worked on royalties and SAP FI GL configuration such as building enterprise structure, IC configuration, Custom object development with help of technical team.
     - Advised business on FI closing activities.
-    - Compiled and transformed transactional and master data migration from ECC to S4 HANA
-    - Clarified business doubts and worked on PC, CC and GL hierarchy and FSV.
+    - Compiled and transformed transactional and master data for migration from SAP ECC to SAP S/4HANA.
+    - Clarified business questions and worked on profit center, cost center, general ledger hierarchy, and financial statement version design.
     - Diagnosed multiple critical business gaps and proposed robust solution on multiple RICEFW objects.
     - Build a solution to a client on royalty forms and calculations which improved 3rd party royalty process by 80%
   - designation: Business technology analyst

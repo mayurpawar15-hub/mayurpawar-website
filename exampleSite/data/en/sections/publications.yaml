@@ -24,7 +24,7 @@ publications:
 - title: SAP Screen Personas A User-Centric Approach to SAP GUI Customization
   publishedIn:
     name: 2016 SAP White Paper
-    date: 7 June 2016
+    date: 25 Nov 2016
     # url: https://example.com
   authors:
   - name: Mayur Shankar Pawar
@@ -41,25 +41,25 @@ publications:
   categories: ["Personas"]
   tags: ["Personas", "SAP GUI Customization", "User Experience"]
 
-# - title: An Sample Paper on Image Processing
-#   publishedIn:
-#     name: 2020 IEEE Region Symposium (TENSYMP)
-#     date: 7 June 2020
-#     url: https://example.com
-#   authors:
-#   - name: Dr. Madman
-#     url: https://example.com
-#   - name: Dr. Lessmad
-#     url: https://example.com
-#   - name: Dr. Moremad
-#     url: https://example.com
-#   - name: Dr. Goodman
-#     url: https://example.com
-#   paper:
-#     summary: Ullamco magna minim cupidatat Lorem ea ex aliqua fugiat et. Dolor quis cillum ea duis irure et commodo aliquip consectetur ullamco labore ut anim nisi. Commodo reprehenderit est consectetur tempor adipisicing occaecat exercitation amet do aliquip dolor do irure. Labore officia ut magna pariatur reprehenderit et ex sit sunt. Magna proident ullamco adipisicing sit.
-#     url: https://example.com
-#   categories: ["image-processing"]
-#   tags: ["Image Processing", "Computer Vision"]
+- title: Subsequent Implementation of Currencies in SAP S/4HANA
+  publishedIn:
+    name: 2023 SAP S/4HANA Finance Knowledge-Sharing Document
+    date: 7 June 2023
+    # url: https://example.com
+  authors:
+  - name: Mayur Pawar
+    url: "https://www.linkedin.com/in/mayurpawar15/"
+  - name: Noah Cuffle
+    url: "https://www.linkedin.com/in/noah-cuffle"
+  # - name: Dr. Moremad
+  #   url: https://example.com
+  # - name: Dr. Goodman
+  #   url: https://example.com
+  paper:
+    summary: A comprehensive guide on enabling additional currency types for live company codes in SAP S/4HANA. This publication explores the end-to-end approach for introducing new currencies in productive environments, including business drivers, solution design, Universal Journal considerations, historical data conversion, financial reconciliation, testing strategy, and cutover planning. The document provides practical insights and best practices for supporting evolving global reporting and consolidation requirements while maintaining data integrity and financial accuracy.
+    # url: https://example.com
+  categories: ["S4HANA"]
+  tags: ["SAP S/4HANA Finance", "SAP FICO", "Universal Journal", "Currency Conversion", "SAP Finance Transformation", "ERP Implementation"]
 
 # - title: An Example Paper on Security
 #   publishedIn:

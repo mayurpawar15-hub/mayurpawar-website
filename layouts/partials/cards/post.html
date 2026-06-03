@@ -5,7 +5,7 @@
         <a href="{{ .RelPermalink | relLangURL }}" class="post-card-link">
           {{ $hero:= partial "helpers/get-hero.html" (dict "context" . "width" "500x") }}
           <img class="card-img-top" src='{{ $hero.RelPermalink }}'
-            alt="Hero Image" loading="lazy">
+            alt="{{ .Title }} - Mayur Shankar Pawar SAP Finance article" loading="lazy">
         </a>
     </div>
     <div class="card-body">

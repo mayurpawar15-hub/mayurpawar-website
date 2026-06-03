@@ -14,8 +14,8 @@ accomplishments:
 - name: ABAP with SAP NetWeaver 7.31 Certification
   timeline: "Apr 2016"
   organization:
-    name: SAP ABAP
-    url: https://www.linuxfoundation.org
+    name: SAP
+    url: https://www.sap.com
   courseOverview: Validated expertise in SAP development including Data Dictionary, Reports, Module Pool Programming, SmartForms, Enhancements, BAdIs, User Exits, Interfaces, Object-Oriented ABAP, and performance tuning. Leveraged this knowledge to collaborate effectively with technical teams and deliver scalable SAP Finance solutions.
   certificateURL: "assets/images/sections/accomplishments/SAPABAP.png"
 
@@ -43,4 +43,3 @@ accomplishments:
 #   courseOverview: Discover how to create responsive and high performance software. Develop programs with Golang that are highly Concurrent and Parallel. Improve your programming skills in Go with more advanced, multithreading topics.
 #   certificateURL: "https://example.com"
  
-

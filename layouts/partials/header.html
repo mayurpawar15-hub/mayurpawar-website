@@ -1,6 +1,18 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+{{ $siteData := index hugo.Data site.Language.Lang }}
+{{ $siteConfig := $siteData.site }}
+{{ $openGraph := $siteConfig.openGraph }}
+{{ $description := .Description | default $openGraph.description | default $siteConfig.description }}
+{{ with $description }}
+<meta name="description" content="{{ . }}" />
+{{ end }}
+{{ $keywords := .Params.keywords | default $siteConfig.keywords }}
+{{ with $keywords }}
+<meta name="keywords" content="{{ delimit . ", " }}" />
+{{ end }}
+<meta name="robots" content="{{ .Params.robots | default "index, follow" }}" />
 
 <!--================= canonical URL =========================-->
 {{/* Use relcanonical from front matter if set, otherwise use the page's permalink */}}
@@ -12,20 +24,12 @@
 
 {{ partial "helpers/style-bundle.html" . }}
 
-<!--================= fab-icon =========================-->
-{{/* add favicon only if the site author has provided the the favicon */}}
-{{ if site.Params.logo.favicon }}
-  {{ $favicon := site.Params.logo.favicon }}
-
-  {{/* resize the favicon. don't resize svg because it is not supported */}}
-  {{ $favicon = resources.Get $favicon }}
-  {{ if and $favicon (ne $favicon.MediaType.SubType "svg") }}
-    {{ $favicon = $favicon.Resize "42x" }}
-  {{ end }}
-  {{ $favicon = $favicon.RelPermalink}}
-
-  <link rel="icon" type="image/png" href="{{ $favicon }}" />
-{{end}}
+<!--================= favicon package =========================-->
+<link rel="icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
 
 {{ with .OutputFormats.Get "rss" -}}
   {{ printf `<link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}

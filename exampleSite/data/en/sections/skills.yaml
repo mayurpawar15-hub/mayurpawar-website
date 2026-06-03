@@ -27,9 +27,8 @@ buttons:
 skills:
 - name: SAP S/4HANA Finance
   logo: /images/sections/skills/kubernetes.png
-  summary: "Led multiple S/4HANA implementations, migrations, and finance transformations across global organizations."
+  summary: "Led SAP S/4HANA Finance implementations, migrations, and finance transformations across global organizations, with focus on SAP FICO, Universal Journal, reporting, and scalable finance architecture."
   categories: ["SAP"]
-  url: "https://kubernetes.io/"
 
 # - name: FI/CO
 #   logo: /images/sections/skills/go.png
@@ -39,7 +38,7 @@ skills:
 
 - name: Central Finance
   logo: /images/sections/skills/cloud.png
-  summary: "Enabled finance harmonization and real-time reporting through SAP Central Finance deployments."
+  summary: "Enabled finance harmonization, replication, and real-time reporting through SAP Central Finance and enterprise finance transformation initiatives."
   categories: ["SAP"]
 
 # - name: Treasury
@@ -50,9 +49,8 @@ skills:
 
 - name: Group Reporting
   logo: /images/sections/skills/prometheus.png
-  summary: "Capable of setup, configure Prometheus metrics. Experienced with PromQL, AlertManager. Also, experienced with writing metric exporters."
+  summary: "Supported SAP finance reporting requirements across statutory, management, and transformation programs, aligning group reporting needs with SAP S/4HANA Finance design."
   categories: ["SAP"]
-  url: "https://prometheus.io/"
 
 - name: Program Management
   logo: /images/sections/skills/linux.png
@@ -63,7 +61,6 @@ skills:
   logo: /images/sections/skills/git.png
   summary: "Built and mentored high-performing teams, fostering collaboration, innovation, and delivery excellence."
   categories: ["Leadership"]
-  url: "https://git-scm.com/"
 
 - name: Stakeholder Management
   logo: /images/sections/skills/c++.png
@@ -98,9 +95,8 @@ skills:
 
 - name: SAP APIs
   logo: /images/sections/skills/git.png
-  summary: "Integrated SAP with enterprise applications using modern APIs, services, and cloud-based connectivity."
+  summary: "Integrated SAP finance processes with enterprise applications using APIs, services, IDocs, and cloud connectivity patterns."
   categories: ["Technology"]
-  url: "https://git-scm.com/"
 
 # - name: IDocs
 #   logo: /images/sections/skills/c++.png
@@ -109,7 +105,7 @@ skills:
 
 - name: Integration Architecture
   logo: /images/sections/skills/c++.png
-  summary: "Designed scalable integration frameworks connecting SAP with cloud and on-premise business applications."
+  summary: "Designed scalable integration frameworks connecting SAP S/4HANA Finance with cloud and on-premise business applications."
   categories: ["Technology"]
 
 - name: AI & Automation

@@ -3,7 +3,7 @@
   "baseUrl": ".",
   "paths": {
    "*": [
-    "../../assets/*"
+    "../../../../../../private/tmp/mayurpawar-hugo-dev/themes/toha/assets/*"
    ]
   }
  }

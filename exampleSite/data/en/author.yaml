@@ -1,5 +1,5 @@
 # some information about you
-name: "Mayur Pawar"
+name: "Mayur Shankar Pawar"
 nickname: "Mayur"
 # greeting message before your name. it will default to "Hi! I am" if not provided
 greeting: "Hi, I am"
@@ -12,8 +12,8 @@ contactInfo:
 
 # some summary about what you do
 summary:
-  - I lead SAP Finance Transformations
-  - I specialize in SAP S/4HANA
-  - I deliver Global ERP Programs
-  - I drive Carve-outs & M&A Initiatives
-  - I help organizations modernize Finance Operations
+  - I lead SAP Finance Transformation programs
+  - I specialize in SAP FICO and SAP S/4HANA Finance
+  - I deliver global ERP and Central Finance initiatives
+  - I advise on Universal Journal, reporting, and finance architecture
+  - I help organizations modernize enterprise finance operations

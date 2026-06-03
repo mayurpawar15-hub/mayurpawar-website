@@ -1,7 +1,3 @@
-{{ define "header" }}
-<meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Title }}{{ end }}" />
-{{ end }}
-
 {{ define "navbar" }}
 {{ partial "navigators/navbar.html" . }}
 {{ end }}
@@ -42,7 +38,7 @@
         {{ $showReadingTime := site.Params.features.readingTime.enable | default true }}
         {{ if site.Params.features.blog.showAuthor | default true }}
         <div class="author-profile ms-auto align-self-lg-center">
-          <img class="rounded-circle" src='{{ partial "helpers/get-author-image.html" . }}' alt="Author Image">
+          <img class="rounded-circle" src='{{ partial "helpers/get-author-image.html" . }}' alt="Mayur Shankar Pawar SAP Finance author profile">
           <h5 class="author-name">{{ partial "helpers/get-author-name.html" . }}</h5>
           <p class="text-muted">
             {{ if $showDate }}{{ .Page.Date | time.Format ":date_full" }}{{ end }}
