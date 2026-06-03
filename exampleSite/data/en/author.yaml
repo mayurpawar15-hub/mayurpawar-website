@@ -3,13 +3,12 @@ name: "Mayur Pawar"
 nickname: "Mayur"
 # greeting message before your name. it will default to "Hi! I am" if not provided
 greeting: "Hi, I am"
-image: "images/author/mayur.png"
+image: "images/author/mayur.jpeg"
 # give your some contact information. they will be used in the footer
 contactInfo:
   email: "mayurpawar15@gmail.com"
   github: mayurpawar15-hub
   linkedin: mayurpawar15
-  researchgate: mayur-pawar
 
 # some summary about what you do
 summary:
