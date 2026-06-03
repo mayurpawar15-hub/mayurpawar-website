@@ -1,0 +1,20 @@
+# some information about you
+name: "Mayur Pawar"
+nickname: "Mayur"
+# greeting message before your name. it will default to "Hi! I am" if not provided
+greeting: "Hi, I am"
+image: "images/author/mayur.png"
+# give your some contact information. they will be used in the footer
+contactInfo:
+  email: "mayurpawar15@gmail.com"
+  github: mayurpawar15-hub
+  linkedin: mayurpawar15
+  researchgate: mayur-pawar
+
+# some summary about what you do
+summary:
+  - I lead SAP Finance Transformations
+  - I specialize in SAP S/4HANA
+  - I deliver Global ERP Programs
+  - I drive Carve-outs & M&A Initiatives
+  - I help organizations modernize Finance Operations

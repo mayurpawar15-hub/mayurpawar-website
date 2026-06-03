@@ -1,0 +1,145 @@
+{{ $sectionID := replace (lower .section.name) " " "-"  }}
+{{ if .section.id }}
+  {{ $sectionID = .section.id }}
+{{ end }}
+
+{{ $author:= hugo.Data.author }}
+{{ if (index hugo.Data site.Language.Lang).author }}
+  {{ $author = (index hugo.Data site.Language.Lang).author }}
+{{ end }}
+
+<style>
+  #about .about-accomplishments {
+    margin: 0.25rem 0 2.25rem;
+  }
+
+  #about .about-accomplishment-list {
+    display: grid;
+    gap: 0.85rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  #about .about-accomplishment {
+    display: grid;
+    grid-template-columns: 1.35rem minmax(0, 1fr);
+    column-gap: 0.55rem;
+    align-items: start;
+    min-height: 2.2rem;
+    line-height: 1.35;
+  }
+
+  #about .about-accomplishment i {
+    font-size: 0.95rem;
+    margin-top: 0.18rem;
+  }
+
+  #about .about-indicators {
+    justify-content: center;
+    row-gap: 1.25rem;
+  }
+
+  #about .about-indicators > .col-6 {
+    display: flex;
+    flex: 0 0 100%;
+    justify-content: center;
+    max-width: 100%;
+  }
+
+  @media (min-width: 576px) {
+    #about .about-indicators > .col-6 {
+      flex: 0 0 33.333333%;
+      max-width: 33.333333%;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    #about .about-accomplishments {
+      margin-top: 1.5rem;
+    }
+  }
+</style>
+
+<div class="container anchor p-lg-5 about-section" id="{{ $sectionID }}">
+  <div class="row pt-sm-2 pt-md-4 align-self-center">
+    <!-- summary -->
+    <!-- takes up full section width if no badges/soft skills are specified -->
+    {{ if or (.softSkills) (.badges) (.accomplishments) }} <div class="col-lg-6"> {{ else }} <div class="col-sm-12"> {{ end }}
+      <h3 class="p-1">{{ $author.name }}</h3>
+      {{ if .designation }}
+      <h5 class="p-1">
+        {{ .designation }}
+        {{ if .company }}
+        {{ i18n "at"}} <a href="{{ .company.url }}" title="{{ .company.name }}" target="_blank" rel="noopener">{{ .company.name }}</a>
+        {{ end }}
+      </h5>
+      {{ end }}
+      <p class="p-1 text-justify">
+        {{ .summary | markdownify }}
+      </p>
+      <div class="text-container ms-auto">
+        <ul class="social-link d-flex">
+          {{ range .socialLinks }}
+          <li>
+            {{ if eq .name "Email" }}
+              <a href="mailto:{{ .url }}" title="{{ .name }}" target="_blank" rel="{{.rel | default "noopener"}}"><i class="{{ .icon }}"></i></a>
+            {{ else if eq .name (i18n "phone") }}
+              <a href="tel:{{ .url }}" title="{{ .name }}" target="_blank" rel="{{.rel | default "noopener"}}"><i class="{{ .icon }}"></i></a>
+            {{ else }}
+              <a href="{{ .url }}" title="{{ .name }}" target="_blank" rel="{{.rel | default "noopener"}}"><i class="{{ .icon }}"></i></a>
+            {{ end }}
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+      {{ if .resume }}
+      <a href="{{ .resume | relURL }}" title="{{ i18n "resume"}}" target="#"
+        ><button class="btn btn-dark">{{ i18n "resume"}}</button></a
+      >
+      {{ end }}
+      {{ range .resourceLinks }}
+      <a href="{{ .url | relURL }}" title="{{ .title }}"{{ if .download }} download{{ else }} target="#"{{ end }}
+        ><button class="btn btn-dark">{{ .title }}</button></a
+      >
+      {{ end }}
+    </div>
+    <!-- accomplishments and circular indicators -->
+    <div class="col-lg-6 pt-5 pt-lg-0 ps-lg-4">
+      {{ if .accomplishments }}
+      <div class="row g-4 about-accomplishments">
+        <div class="col-12 col-sm-6">
+          <ul class="about-accomplishment-list">
+          {{ range first 3 .accomplishments }}
+            <li class="about-accomplishment">
+              <i class="fa-solid fa-circle-check text-primary" aria-hidden="true"></i>
+              <span>{{ . }}</span>
+            </li>
+          {{ end }}
+          </ul>
+        </div>
+        <div class="col-12 col-sm-6">
+          <ul class="about-accomplishment-list">
+          {{ range after 3 .accomplishments }}
+            <li class="about-accomplishment">
+              <i class="fa-solid fa-circle-check text-primary" aria-hidden="true"></i>
+              <span>{{ . }}</span>
+            </li>
+          {{ end }}
+          </ul>
+        </div>
+      </div>
+      {{ end }}
+      <div class="row about-indicators">
+        {{ range .badges }}
+          {{ partial "misc/badge.html" . }}
+        {{ end }}
+        <!-- TODO: Remove this part in version v4+ -->
+        <!-- Keep backward compatibility with old configuration -->
+        {{ range .softSkills }}
+          {{ partial "misc/soft-skills.html" . }}
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</div>

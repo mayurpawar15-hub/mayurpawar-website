@@ -1,0 +1,122 @@
+# section information
+section:
+  name: Education
+  id: education
+  template: sections/education.html # Use "sections/education-alt.html for alternate template.
+  enable: true
+  weight: 4
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+degrees:
+- name: Post Graduate Diploma in Enterprise Resource Planning
+  icon: fa-microscope
+  timeframe: 2015-2016
+  institution:
+    name: College Of Engineering, Pune
+    url: "https://www.coeptech.ac.in"
+    logo: /images/sections/education/COEP.png
+    # Can optionally show a different logo for dark theme
+    # darkLogo: /images/sections/education/COEP.png
+  grade: #(optional)
+    scale: CGPA
+    achieved: 8.3
+    outOf: 10
+  takenCourses: #(optional)
+    # if true, the courses will be rendered as a table otherwise it will render as a list and the grades will be hidden.
+    showGrades: true
+    collapseAfter: 3
+    courses:
+    - name: SAP FICO
+      achieved: 09
+      outOf: 10
+    - name: SAP ABAP
+      achieved: 10
+      outOf: 10
+    - name: SAP MM
+      achieved: 09
+      outOf: 10
+    - name: SAP Production and Operation Management
+      achieved: 08
+      outOf: 10
+  # publications: #(optional)
+  # - title: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  #   url: "#"
+  # - title: Fusce eu augue ut odio porttitor pulvinar.
+  #   url: "#"
+  # - title: Nullam vitae orci tincidunt purus viverra pulvinar.
+  #   url: "#"
+- name: Bachelor of Engineering in Information Technology
+  icon: fa-graduation-cap
+  timeframe: 2008-2014
+  institution:
+    name: PVG's COET, Pune University
+    url: "#"
+    logo: /images/sections/education/Savitribai_Phule_Pune_University_Logo.png
+    # Can optionally show a different logo for dark theme
+    # darkLogo: /images/sections/education/Savitribai_Phule_Pune_University_Logo.png
+  grade: #(optional)
+    scale: CGPA
+    achieved: 3.0
+    outOf: 5
+  takenCourses: #(optional)
+    # if true, the courses will be rendered as a table otherwise it will render as a list and the grades will be hidden.
+    showGrades: true
+    collapseAfter: 3
+    courses:
+    - name: Info Assurance and Security
+      achieved: "06"
+      outOf: 10
+    - name: Artificial Intelligence
+      achieved: "05"
+      outOf: 10
+    - name: Software Architecture
+      achieved: "07"
+      outOf: 10
+    - name: Project work
+      achieved: "07"
+      outOf: 10
+  # publications: #(optional)
+  # - title: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  #   url: "#"
+  # - title: Fusce eu augue ut odio porttitor pulvinar.
+  #   url: "#"
+  # extracurricularActivities: #(optional)
+  # - In vitae facilisis est, eget porta sem.
+  # - Vestibulum consectetur lorem justo, at laoreet lorem feugiat et.
+  # - Duis sed massa feugiat, ornare justo et, aliquam est.
+  # - Pellentesque ut fringilla magna.
+  # customSections: #(optional)
+  #   - name: Thesis
+  #     content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  #   - name: Supervisor
+  #     content: Fusce eu augue ut odio porttitor pulvinar.
+- name: Higher Secondary School Certificate
+  icon: fa-university
+  timeframe: 2008
+  institution:
+    name: KHS, Pune 
+    url: "https://kaveri.edu.in/khsg/"
+    logo: /images/sections/education/kaveri_logo.png
+    # Can optionally show a different logo for dark theme
+    # darkLogo: /images/sections/education/science_college.png
+  grade: #(optional)
+    scale: GPA
+    achieved: 6.4
+    outOf: 10
+  # extracurricularActivities: #(optional)
+  # - In vitae facilisis est, eget porta sem.
+  # - Vestibulum consectetur lorem justo, at laoreet lorem feugiat et.
+  # - Duis sed massa feugiat, ornare justo et, aliquam est.
+  # - Pellentesque ut fringilla magna.
+- name: Secondary School Certificate
+  icon: fa-school
+  timeframe: 2006
+  institution:
+    name: Lakshman Rao Apte Prashala, Pune
+    url: "https://vidyamahamandalpune.org/strt_pg.php"
+  grade: #(optional)
+    # scale: GPA
+    # achieved: 5.6
+    # outOf: 10

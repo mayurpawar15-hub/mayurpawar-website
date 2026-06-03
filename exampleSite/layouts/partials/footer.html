@@ -1,0 +1,157 @@
+{{ $footerEnabled := site.Params.footer.enable | default true }}
+{{ $navigationEnabled := site.Params.footer.navigation.enable | default true }}
+{{ $customMenusEnabled := site.Params.footer.navigation.customMenus | default true }}
+{{ $contactMeEnabled := site.Params.footer.contactMe.enable | default true }}
+
+{{ if $footerEnabled }}
+  {{ $author := hugo.Data.author }}
+  {{ if (index hugo.Data site.Language.Lang).author }}
+    {{ $author = (index hugo.Data site.Language.Lang).author }}
+  {{ end }}
+
+  {{ $sections := hugo.Data.sections }}
+  {{ if (index hugo.Data site.Language.Lang).sections }}
+    {{ $sections = (index hugo.Data site.Language.Lang).sections }}
+  {{ end }}
+
+  {{ $customMenus := site.Params.customMenus }}
+  {{ if (index hugo.Data site.Language.Lang).site.customMenus }}
+    {{ $customMenus = (index hugo.Data site.Language.Lang).site.customMenus }}
+  {{ end }}
+
+  {{ $siteConfig := (index hugo.Data site.Language.Lang).site }}
+  {{ $copyrightNotice := now.Format "2006" | printf "© %s Mayur Pawar. All rights reserved." }}
+  {{ if $siteConfig.copyright }}
+    {{ $copyrightNotice = $siteConfig.copyright }}
+  {{ end }}
+
+  <style>
+    #footer .footer-contact-form .form-control {
+      background-color: transparent;
+      border: 1px solid rgba(203, 213, 225, 0.9);
+      border-radius: 0.45rem;
+      color: inherit;
+    }
+
+    #footer .footer-contact-form .form-control::placeholder {
+      color: rgba(203, 213, 225, 0.9);
+    }
+
+    #footer .footer-contact-form .form-control:focus {
+      background-color: transparent;
+      border-color: #17a2b8;
+      box-shadow: 0 0 0 0.15rem rgba(23, 162, 184, 0.25);
+      color: #fff;
+    }
+
+    #footer .footer-contact-form textarea.form-control {
+      min-height: 6rem;
+      resize: vertical;
+    }
+  </style>
+
+  <footer id="footer" class="container-fluid text-center align-content-center footer pb-2">
+    <div class="container pt-5">
+      <div class="row text-start gy-4">
+        {{ if $navigationEnabled }}
+        <div class="col-md-4 col-sm-12">
+          <h5>{{ i18n "navigation" }}</h5>
+          {{ if $sections }}
+          <ul>
+            {{ range sort $sections "section.weight" }}
+              {{ if and (.section.enable) (.section.showOnNavbar) }}
+                {{ $sectionID := replace (lower .section.name) " " "-" }}
+                {{ if .section.id }}
+                  {{ $sectionID = .section.id }}
+                {{ end }}
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="{{ "" | absLangURL }}#{{ $sectionID }}">{{ .section.name }}</a>
+                </li>
+              {{ end }}
+            {{ end }}
+            {{ if $customMenusEnabled }}
+              {{ range $customMenus }}
+                {{ if .showOnFooter }}
+                  <li class="nav-item">
+                    <a class="smooth-scroll" href="{{ .url }}">{{ .name }}</a>
+                  </li>
+                {{ end }}
+              {{ end }}
+            {{ end }}
+          </ul>
+          {{ end }}
+        </div>
+        {{ end }}
+
+        {{ if and $contactMeEnabled $author }}
+        <div class="col-md-4 col-sm-12">
+          <h5>{{ i18n "contact_me" }}</h5>
+          <ul>
+            {{ range $key, $value := $author.contactInfo }}
+              {{ if eq $key "email" }}
+                <li><a href={{ printf "mailto:%s" $value }} target="_blank" rel="noopener">
+                  <span><i class="fas fa-envelope"></i></span> <span>{{ $value }}</span>
+                </a></li>
+              {{ else if eq $key "linkedin" }}
+                <li><a href={{ printf "https://www.linkedin.com/in/%s" $value }} target="_blank" rel="noopener">
+                  <span><i class="fab fa-linkedin"></i></span> <span>{{ $author.name }}</span>
+                </a></li>
+              {{ else if eq $key "github" }}
+                <li><a href={{ printf "https://github.com/%s" $value }} target="_blank" rel="noopener">
+                  <span><i class="fab fa-github"></i></span> <span>{{ $value }}</span>
+                </a></li>
+              {{ else if eq $key "researchgate" }}
+                <li><a href={{ printf "https://www.researchgate.net/profile/%s" $value }} target="_blank" rel="noopener">
+                  <span><i class="fab fa-researchgate"></i></span> <span>{{ $author.name }}</span>
+                </a></li>
+              {{ else if reflect.IsMap $value }}
+                <li>
+                  {{ if and (isset $value "url") (isset $value "icon") }}
+                    <a href={{ $value.url }} target="_blank" rel="noopener">
+                      <span><i class={{ printf "fab fa-%s" $value.icon }}></i></span> <span>{{ $value.text }}</span>
+                    </a>
+                  {{ else if isset $value "icon" }}
+                    <span><i class={{ printf "fab fa-%s" $value.icon }}></i></span> <span>{{ $value.text }}</span>
+                  {{ else }}
+                    <a href={{ $value.url }} target="_blank" rel="noopener">
+                      <span>{{ title $key }}: </span> <span>{{ $value.text }}</span>
+                    </a>
+                  {{ end }}
+                </li>
+              {{ else }}
+                <li><span>{{ title $key }}: </span> <span>{{ $value }}</span></li>
+              {{ end }}
+            {{ end }}
+          </ul>
+        </div>
+        {{ end }}
+
+        <div class="col-md-4 col-sm-12">
+          <h5>Contact Us</h5>
+          <form class="footer-contact-form" action="https://formsubmit.co/mayurpawar15@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="New message from Mayur's Blog">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <div class="form-group mb-2">
+              <input type="text" class="form-control" name="name" placeholder="Your name" required>
+            </div>
+            <div class="form-group mb-2">
+              <input type="email" class="form-control" name="email" placeholder="Your email" required>
+            </div>
+            <div class="form-group mb-2">
+              <textarea class="form-control" name="message" rows="3" placeholder="Your message" required></textarea>
+            </div>
+            <div class="d-flex flex-column align-items-end gap-2">
+              <button type="submit" class="btn btn-info">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+    <div class="container">
+      <div class="text-center">{{ $copyrightNotice | markdownify }}</div>
+    </div>
+  </footer>
+{{ end }}

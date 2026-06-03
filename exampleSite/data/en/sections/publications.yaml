@@ -1,0 +1,82 @@
+# section information
+section:
+  name: Publications
+  id: publications
+  enable: true
+  weight: 6
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# filter buttons
+buttons:
+- name: All
+  filter: "all"
+- name: "SAP Screen Personas"
+  filter: "Personas"
+- name: "SAP S4 HANA"
+  filter: "S4HANA"
+# - name: Security
+#   filter: "security"
+
+# your publications
+publications:
+- title: SAP Screen Personas A User-Centric Approach to SAP GUI Customization
+  publishedIn:
+    name: 2016 SAP White Paper
+    date: 7 June 2016
+    # url: https://example.com
+  authors:
+  - name: Mayur Shankar Pawar
+    url: "https://www.linkedin.com/in/mayurpawar15/"
+  - name: Raghuram Kapaganty
+    url: https://www.linkedin.com/in/raghuram-kapaganty-92103920a/
+  # - name: Dr. Moremad
+  #   url: https://example.com
+  # - name: Dr. Goodman
+  #   url: https://example.com
+  paper:
+    summary: Authored a white paper on SAP Screen Personas, demonstrating how UI simplification and right-click restrictions can improve user experience, strengthen security controls, and enhance process compliance across enterprise SAP landscapes.
+    # url: https://example.com
+  categories: ["Personas"]
+  tags: ["Personas", "SAP GUI Customization", "User Experience"]
+
+# - title: An Sample Paper on Image Processing
+#   publishedIn:
+#     name: 2020 IEEE Region Symposium (TENSYMP)
+#     date: 7 June 2020
+#     url: https://example.com
+#   authors:
+#   - name: Dr. Madman
+#     url: https://example.com
+#   - name: Dr. Lessmad
+#     url: https://example.com
+#   - name: Dr. Moremad
+#     url: https://example.com
+#   - name: Dr. Goodman
+#     url: https://example.com
+#   paper:
+#     summary: Ullamco magna minim cupidatat Lorem ea ex aliqua fugiat et. Dolor quis cillum ea duis irure et commodo aliquip consectetur ullamco labore ut anim nisi. Commodo reprehenderit est consectetur tempor adipisicing occaecat exercitation amet do aliquip dolor do irure. Labore officia ut magna pariatur reprehenderit et ex sit sunt. Magna proident ullamco adipisicing sit.
+#     url: https://example.com
+#   categories: ["image-processing"]
+#   tags: ["Image Processing", "Computer Vision"]
+
+# - title: An Example Paper on Security
+#   publishedIn:
+#     name: 2020 IEEE Region Symposium (TENSYMP)
+#     date: 7 June 2020
+#     url: https://example.com
+#   authors:
+#   - name: Dr. Madman
+#     url: https://example.com
+#   - name: Dr. Lessmad
+#     url: https://example.com
+#   - name: Dr. Moremad
+#     url: https://example.com
+#   - name: Dr. Goodman
+#     url: https://example.com
+#   paper:
+#     summary: Dolor ad cupidatat pariatur nulla ipsum ex ullamco nisi anim ullamco. Dolore elit esse in exercitation minim aliqua. Amet velit incididunt magna laboris. Proident reprehenderit deserunt ad officia duis dolor. Tempor nostrud ullamco ullamco sint deserunt cupidatat irure minim consectetur nulla adipisicing sunt.
+#     url: https://example.com
+#   categories: ["security"]
+#   tags: ["Machine Learning", "Autonomous Driving", "Machine Vision"]

@@ -1,0 +1,119 @@
+# section information
+section:
+  name: Experiences
+  id: experiences
+  enable: true
+  weight: 3
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true 
+
+# Your experiences
+experiences:
+- company:
+    name: HCLTech
+    url: "https://www.hcltech.com"
+    location: Chicago Illinois, USA
+    logo: /images/sections/experiences/HCL-logo.png
+    # Can optionally show a different logo for dark theme
+    # darkLogo: /images/sections/experiences/HCL.jpg
+    # company overview
+    overview: HCLTech is a global technology leader providing IT services and consulting to Fortune 500 companies, helping organizations transform and innovate at scale.
+  positions:
+  - designation: Managing Consultant
+    start: Jan 2025
+    # don't provide end date if you are currently working there. It will be replaced by "Present"
+    # end: Dec 2020
+    # give some points about what was your responsibilities at the company.
+    responsibilities:
+    - Lead the financial workstream for the SAP aspects of the demerger, defining a roadmap for separating financial structures, reporting entities, and master data.
+    - Collaborate with legal, tax, and corporate finance teams to understand the target operating models for each new entity.
+    - Identify SAP Finance objects impacted by the demerger (e.g., company codes, controlling areas, cost centers, profit centers, segments).
+    - Oversee the carve-out and migration of finance data — historical and open — to the new SAP environments or clients.
+    - Ensure data consistency, integrity, and auditability during the transition.
+    - Coordinate with technical teams on tools and strategies (e.g., SAP Landscape Transformation, custom migration tools).
+    - Lead the finance track during cutover planning and execution to ensure a smooth transition with minimal business disruption.
+
+  # - designation: Junior Software Engineer
+  #   start: Nov 2017
+  #   end: Oct 2019
+  #   responsibilities:
+  #   - Implement and test xyz feature for abc tool.
+  #   - Support client for abc tool.
+  #   - Learn k,d,w technology for xyz.
+
+- company:
+    name: Deloitte
+    url: "https://www.deloitte.com/us/en.html"
+    location: Atlanta Georgia, USA
+    logo: /images/sections/experiences/Deloitte.png
+    # Can optionally show a different logo for dark theme
+    # darkLogo: /images/sections/experiences/company2.jpg
+    overview: Deloitte is a leading global consulting and professional services firm, helping organizations navigate complex business and technology transformations.
+  positions:
+  - designation: SAP Senior Consultant
+    start: May 2022
+    end: Jan 2025
+    responsibilities:
+    - Analyzed impact and worked on subsequent implementation of ledger and local currency, one of the unique solutions provided to client which helped then to utilize existing ~200 company codes.
+    - Acted as subject matter expert in client meetings, providing guidance on best practices for utilizing SAP FICO module.
+    - Led a team of 7 people and delivered and worked on configuration items such as Enterprise structure, Validation and Substitutions, IC configuration, FX Val etc.
+    - Awarded with Outstanding award to close critical Go-Live path items and helped team to make multiple successful go lives.
+    - Coached junior resources to complete deliverables and helped them with SAP best practices.
+    - Identified and resolved process bottlenecks, reducing processing time by 15% and improving customer
+      satisfaction.
+    - Analyzed existing process scenarios and prepared new business blueprints.
+    - Mapped client business requirements to optimal IT solutions, defining project scope and finalizing requirements.
+    - Conducted AS-IS and TO-BE analysis, studying workflows, designing solutions, and preparing requirement documents for customer approval.
+    - Collaborated with project managers and stakeholders to align project goals, timelines, and deliverables.
+    - Contributed to project planning, scheduling, and progress monitoring to ensure successful delivery.
+    - Led workshops and briefings on business scenarios that could be mapped in SAP systems for core team
+      members and business process owners.
+    - Provided continuous support for production system issues while working on rollout and enhancement
+      projects.
+    - Managed end-to-end implementation projects from kickoff to completion.
+  - designation: SAP Consultant
+    start: Aug 2019
+    end: May 2022
+    responsibilities:
+    - Led Digital Accounting thread in video game industry.
+    - Worked on royalties and SAP FI GL configuration such as building enterprise structure, IC configuration, Custom object development with help of technical team.
+    - Advised business on FI closing activities.
+    - Compiled and transformed transactional and master data migration from ECC to S4 HANA
+    - Clarified business doubts and worked on PC, CC and GL hierarchy and FSV.
+    - Diagnosed multiple critical business gaps and proposed robust solution on multiple RICEFW objects.
+    - Build a solution to a client on royalty forms and calculations which improved 3rd party royalty process by 80%
+  - designation: Business technology analyst
+    start: Oct 2016
+    end: Sep 2019
+    responsibilities:
+    - Built a secure solution on credit card payments which helped business to register credit card transactions directly in SAP which helped business to improve reporting by 40%
+    - Collaborate with functional consultants and business stakeholders to understand system requirements and translate them into technical specifications.
+    - Design, develop, test, and implement custom SAP ABAP programs, reports, interfaces, enhancements, forms
+      (SMARTFORMS/Adobe), and user exits.
+    - Support SAP modules such as FICO, MM, SD, and HCM by developing and maintaining ABAP solutions aligned
+      with business processes.
+    - Follow Deloitte's development standards and best practices in ABAP coding, documentation, and transport management.
+    - Collaborate in agile or waterfall delivery models, contributing to sprint planning, daily stand-ups, and
+      retrospectives when applicable.
+    - Prepare technical documentation and contribute to knowledge-sharing within the ABAP team.
+    - Provide production support, troubleshoot technical issues, and deliver timely bug fixes for SAP applications.
+    - Engage in continuous learning and certifications to keep up with SAP's evolving technologies like S/4HANA,
+      Fiori/UI5, CDS views, and OData.
+
+- company:
+    name: Deloitte
+    url: "https://www.deloitte.com/us/en.html"
+    location: Hyderabad Telangana, India
+    logo: /images/sections/experiences/Deloitte.png
+    # Can optionally show a different logo for dark theme
+    # darkLogo: /images/sections/experiences/company3.jpg
+    overview: Deloitte is a leading global consulting and professional services firm, helping organizations navigate complex business and technology transformations.
+  positions:
+  - designation: Intern
+    start: May 2016
+    end: Jul 2016
+    responsibilities:
+    - Joined Deloitte as technical intern worked on multiple RICEFW objects in ISU industry.
+    - Catalogued basic clerical duties by taking memos, maintaining files, and organizing documents.
+    - Designed multiple forms and complex enhancements, worked on writing complex technical specification documents and PMO tasks.

@@ -1,0 +1,100 @@
+# section information
+section:
+  name: About
+  id: about
+  enable: true
+  weight: 1
+  showOnNavbar: true
+  template: sections/about.html
+
+# your designation
+designation: Managing Consultant
+# your company information
+company:
+  name: HCLTech
+  url: "https://www.hcltech.com/"
+
+# your resume. this file path should be relative to you "static" directory
+# Dreprecated. Use resourceLinks instead.
+# resume: "files/resume.pdf"
+
+# a summary about you
+summary: |
+  I am an SAP Finance and Transformation Leader with 9+ years of experience delivering large-scale ERP programs across global organizations. My expertise spans SAP S/4HANA Finance, enterprise transformations, carve-outs, mergers, and business process optimization. I am passionate about building scalable solutions, leading high-performing teams, and helping businesses unlock value through technology and innovation.
+
+  Currently, I work on complex SAP Finance initiatives, driving strategy, architecture, and delivery for mission-critical programs. Beyond work, I enjoy exploring emerging technologies, contributing to the tech community, and continuously learning new skills.
+
+# your social links
+# give as many as you want. use font-awesome for the icons.
+socialLinks:
+- name: Email
+  icon: "fas fa-envelope"
+  url: "mayurpawar15@gmail.com"
+
+- name: Github
+  icon: "fab fa-github"
+  url: "https://github.com/mayurpawar15-hub"
+
+- name: Stackoverflow
+  icon: "fab fa-stack-overflow"
+  url: "#"
+
+- name: LinkedIn
+  icon: "fab fa-linkedin"
+  url: "https://www.linkedin.com/in/mayurpawar15/"
+
+- name: Twitter
+  icon: "fab fa-twitter"
+  url: "#"
+
+- name: Facebook
+  icon: "fab fa-facebook"
+  url: "#"
+
+- name: Mastadon
+  icon: "fab fa-mastodon"
+  url: "#"
+  rel: "me noopener"
+
+- name: ResearchGate
+  icon: "fab fa-researchgate"
+  url: "https://www.researchgate.net/profile/mayur-pawar"
+
+# You can put custom buttons to link your relevant resources.
+# For example, you can put link for your resume.
+resourceLinks:
+- title: "Download Resume"
+  url: "files/resume.pdf"
+  download: true
+
+accomplishments:
+  - 9+ years SAP experience
+  - Global ERP programs Delivered
+  - Big 4 Experience
+  - SAP Finance Transformation Specialist
+  - M&A and Carve-Out Programs
+  - Led cross-Functional teams
+
+# Show circular indicators.
+badges:
+
+- type: soft-skill-indicator
+  name: Leadership
+  percentage: 85
+  color: blue
+
+- type: soft-skill-indicator
+  name: Team Work
+  percentage: 90
+  color: yellow
+
+- type: soft-skill-indicator
+  name: Hard Working
+  percentage: 95
+  color: orange
+
+# you can also provide color code instead of the color name
+# - type: soft-skill-indicator
+#   name: Example 1
+#   percentage: 75
+#   color: "#00adb5"

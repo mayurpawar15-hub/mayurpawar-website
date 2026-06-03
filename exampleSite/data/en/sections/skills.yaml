@@ -1,0 +1,118 @@
+# section information
+section:
+  name: Skills
+  id: skills
+  enable: true
+  weight: 2
+  showOnNavbar: true
+  filter: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# filter buttons
+buttons:
+- name: All
+  filter: "all"
+- name: SAP
+  filter: "SAP"
+- name: Leadership
+  filter: "Leadership"
+- name: Transformation
+  filter: "Transformation"
+- name: Technology
+  filter: "Technology"
+
+# Your Skills.
+# Give a summary of you each skill in the summary section.
+skills:
+- name: SAP S/4HANA Finance
+  logo: /images/sections/skills/kubernetes.png
+  summary: "Led multiple S/4HANA implementations, migrations, and finance transformations across global organizations."
+  categories: ["SAP"]
+  url: "https://kubernetes.io/"
+
+# - name: FI/CO
+#   logo: /images/sections/skills/go.png
+#   summary: "USpecialized in SAP Financial Accounting and Controlling, delivering scalable and compliant finance solutions."
+#   categories: ["SAP"]
+#   url: "https://golang.org/"
+
+- name: Central Finance
+  logo: /images/sections/skills/cloud.png
+  summary: "Enabled finance harmonization and real-time reporting through SAP Central Finance deployments."
+  categories: ["SAP"]
+
+# - name: Treasury
+#   logo: /images/sections/skills/docker.svg
+#   summary: "Implemented financial consolidation and group reporting solutions to support global statutory and management reporting."
+#   categories: ["SAP"]
+#   url: "https://www.docker.com/"
+
+- name: Group Reporting
+  logo: /images/sections/skills/prometheus.png
+  summary: "Capable of setup, configure Prometheus metrics. Experienced with PromQL, AlertManager. Also, experienced with writing metric exporters."
+  categories: ["SAP"]
+  url: "https://prometheus.io/"
+
+- name: Program Management
+  logo: /images/sections/skills/linux.png
+  summary: "Successfully delivered complex ERP programs by managing scope, timelines, budgets, and stakeholder expectations."
+  categories: ["Leadership"]
+
+- name: Team Leadership
+  logo: /images/sections/skills/git.png
+  summary: "Built and mentored high-performing teams, fostering collaboration, innovation, and delivery excellence."
+  categories: ["Leadership"]
+  url: "https://git-scm.com/"
+
+- name: Stakeholder Management
+  logo: /images/sections/skills/c++.png
+  summary: "Partnered with business leaders and executives to align technology initiatives with strategic objectives."
+  categories: ["Leadership"]
+
+# - name: Vendor Management
+#   logo: /images/sections/skills/c++.png
+#   summary: "Managed global system integrators and vendors to ensure quality delivery and optimal project outcomes."
+#   categories: ["Leadership"]
+
+# - name: Finance Transformation
+#   logo: /images/sections/skills/git.png
+#   summary: "Modernized finance organizations through process standardization, automation, and digital transformation initiatives."
+#   categories: ["Transformation"]
+#   url: "https://git-scm.com/"
+
+- name: M&A / Carve-outs
+  logo: /images/sections/skills/c++.png
+  summary: "Led finance workstreams for mergers, acquisitions, divestitures, and organizational separations."
+  categories: ["Transformation"]
+
+- name: ERP Modernization
+  logo: /images/sections/skills/c++.png
+  summary: "Transformed legacy ERP landscapes into agile, cloud-ready enterprise platforms."
+  categories: ["Transformation"]
+
+- name: Process Optimization
+  logo: /images/sections/skills/c++.png
+  summary: "Improved operational efficiency by redesigning finance processes and implementing best practices."
+  categories: ["Transformation"]
+
+- name: SAP APIs
+  logo: /images/sections/skills/git.png
+  summary: "Integrated SAP with enterprise applications using modern APIs, services, and cloud-based connectivity."
+  categories: ["Technology"]
+  url: "https://git-scm.com/"
+
+# - name: IDocs
+#   logo: /images/sections/skills/c++.png
+#   summary: "Developed and supported robust SAP IDoc interfaces for seamless system-to-system communication."
+#   categories: ["Technology"]
+
+- name: Integration Architecture
+  logo: /images/sections/skills/c++.png
+  summary: "Designed scalable integration frameworks connecting SAP with cloud and on-premise business applications."
+  categories: ["Technology"]
+
+- name: AI & Automation
+  logo: /images/sections/skills/c++.png
+  summary: "Leveraged AI and intelligent automation to streamline business processes and enhance decision-making."
+  categories: ["Technology"]
