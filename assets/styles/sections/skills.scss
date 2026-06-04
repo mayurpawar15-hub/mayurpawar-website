@@ -13,14 +13,26 @@
       border-bottom: 0.0625rem solid rgba(get-light-color('accent-color'), 0.4);
 
       .card-img-xs {
+        width: 2.25rem;
+        height: 2.25rem;
         margin-right: 0.5rem;
         margin-bottom: 0.75rem;
+        transition: transform $transition-duration $transition-type,
+          filter $transition-duration $transition-type;
       }
     }
 
     .card-body {
       padding-top: 0.2rem;
       padding-left: 0.7rem;
+    }
+
+    &:hover,
+    &:focus-within {
+      .card-img-xs {
+        transform: scale(1.08);
+        filter: drop-shadow(0 0.2rem 0.55rem rgba(get-light-color('accent-color'), 0.35));
+      }
     }
   }
 
@@ -31,6 +43,15 @@
     .container {
       max-width: 95%;
     }
+
+    .card {
+      .card-head {
+        .card-img-xs {
+          width: 2rem;
+          height: 2rem;
+        }
+      }
+    }
   }
 }
 
@@ -40,6 +61,13 @@ html[data-theme='dark'] {
       .card-head {
         background-color: get-dark-color('bg-card') !important;
         border-bottom: 0.0625rem solid rgba(get-dark-color('accent-color'), 0.4);
+      }
+
+      &:hover,
+      &:focus-within {
+        .card-img-xs {
+          filter: drop-shadow(0 0.2rem 0.65rem rgba(get-dark-color('accent-color'), 0.55));
+        }
       }
     }
   }

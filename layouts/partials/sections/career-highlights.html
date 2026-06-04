@@ -1,0 +1,41 @@
+{{ $sectionID := replace (lower .section.name) " " "-" }}
+{{ if .section.id }}
+  {{ $sectionID = .section.id }}
+{{ end }}
+
+<div class="container-fluid anchor pb-5 career-highlights-section" id="{{ $sectionID }}">
+  {{ if not (.section.hideTitle) }}
+    <h1 class="text-center">
+      <span id="{{ $sectionID }}"></span>{{ .section.name }}
+    </h1>
+  {{ else }}
+    <h1 class="text-center d-none">
+      <span id="{{ $sectionID }}"></span>{{ .section.name }}
+    </h1>
+  {{ end }}
+
+  <div class="container">
+    <div class="row career-highlight-grid">
+      {{ range .highlights }}
+      <div class="col-12 col-md-6 col-xl-4 career-highlight-item">
+        <article class="career-highlight-card h-100">
+          <div class="career-highlight-icon" aria-hidden="true">
+            <i class="{{ .icon }}"></i>
+          </div>
+          <div class="career-highlight-content">
+            <div class="career-highlight-value">
+              {{ if isset . "value" }}
+                <span class="career-highlight-counter" data-count="{{ .value }}">0</span>{{ .suffix }}
+              {{ else }}
+                <span>{{ .displayValue }}</span>
+              {{ end }}
+            </div>
+            <h2 class="career-highlight-title">{{ .title }}</h2>
+            <p class="career-highlight-description">{{ .description }}</p>
+          </div>
+        </article>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</div>

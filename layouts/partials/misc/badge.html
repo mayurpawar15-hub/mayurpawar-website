@@ -18,21 +18,19 @@
         {{ $rightProgress = 50 }}
         {{ $leftProgress = sub .percentage 50 }}
     {{ end }}
+    {{ $leftRotation := mul $leftProgress 3.6 }}
+    {{ $rightRotation := mul $rightProgress 3.6 }}
     <div class="circular-progress {{if $predefinedColor}}{{ .color }}{{end}}">
     <span class="circular-progress-left">
         <span
-        class="circular-progress-bar circular-progress-percentage-{{ $leftProgress }}  circular-progress-percentage-50-delay"
-        {{ if not $predefinedColor }}
-            style="border-color: {{.color}};"
-        {{ end }}
+        class="circular-progress-bar circular-progress-percentage-{{ $leftProgress }} circular-progress-percentage-50-delay"
+        style="transform: rotate({{ printf "%.1f" $leftRotation }}deg); {{ if not $predefinedColor }}border-color: {{.color}};{{ end }}"
         ></span>
     </span>
     <span class="circular-progress-right">
         <span
         class="circular-progress-bar circular-progress-percentage-{{ $rightProgress }}"
-        {{ if not $predefinedColor }}
-            style="border-color: {{.color}};"
-        {{ end }}
+        style="transform: rotate({{ printf "%.1f" $rightRotation }}deg); {{ if not $predefinedColor }}border-color: {{.color}};{{ end }}"
         ></span>
     </span>
     <div class="circular-progress-value">{{ .name }}</div>

@@ -1,0 +1,120 @@
+.career-highlights-section {
+  @include section-title-adjustment();
+
+  .career-highlight-grid {
+    row-gap: 1.5rem;
+  }
+
+  .career-highlight-item {
+    display: flex;
+  }
+
+  .career-highlight-card {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    padding: 1.25rem;
+    border-top: 2px solid get-light-color('accent-color');
+    border-radius: 0.375rem;
+    background: get-light-color('bg-card');
+    box-shadow: 0 0.25rem 1.25rem rgba(15, 23, 42, 0.08);
+    transition: transform $transition-duration $transition-type,
+      border-color $transition-duration $transition-type,
+      box-shadow $transition-duration $transition-type;
+
+    &:hover,
+    &:focus-within {
+      transform: translateY(-0.25rem);
+      border-color: get-light-color('hover-over-accent-color');
+      box-shadow: 0 0.5rem 1.75rem rgba(15, 80, 100, 0.14);
+    }
+  }
+
+  .career-highlight-icon {
+    flex: 0 0 3rem;
+    width: 3rem;
+    height: 3rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: get-light-color('text-over-accent-color');
+    background: get-light-color('accent-color');
+    font-size: 1.25rem;
+  }
+
+  .career-highlight-content {
+    min-width: 0;
+  }
+
+  .career-highlight-value {
+    color: get-light-color('heading-color');
+    font-size: 1.9rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 0.35rem;
+  }
+
+  .career-highlight-title {
+    color: get-light-color('heading-color');
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-bottom: 0.45rem;
+  }
+
+  .career-highlight-description {
+    color: get-light-color('text-color');
+    font-size: 0.95rem;
+    line-height: 1.55;
+    margin-bottom: 0;
+  }
+
+  @include media('<=medium') {
+    padding-left: 0;
+    padding-right: 0;
+
+    .container {
+      max-width: 95%;
+    }
+  }
+
+  @include media('<=small') {
+    .career-highlight-card {
+      padding: 1rem;
+    }
+
+    .career-highlight-value {
+      font-size: 1.65rem;
+    }
+  }
+}
+
+html[data-theme='dark'] {
+  .career-highlights-section {
+    .career-highlight-card {
+      background: get-dark-color('bg-card');
+      border-color: get-dark-color('accent-color');
+      box-shadow: 0 0.25rem 1.25rem rgba(0, 0, 0, 0.22);
+
+      &:hover,
+      &:focus-within {
+        border-color: get-dark-color('hover-over-accent-color');
+        box-shadow: 0 0.5rem 1.75rem rgba(0, 0, 0, 0.28);
+      }
+    }
+
+    .career-highlight-icon {
+      color: get-dark-color('text-over-accent-color');
+      background: get-dark-color('accent-color');
+    }
+
+    .career-highlight-value,
+    .career-highlight-title {
+      color: get-dark-color('heading-color');
+    }
+
+    .career-highlight-description {
+      color: get-dark-color('text-color');
+    }
+  }
+}

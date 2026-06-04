@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" role="img">
+  <defs>
+    <linearGradient id="stakeholder-management-a" x1="6" y1="34" x2="34" y2="6" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0ea5e9"/>
+      <stop offset="1" stop-color="#f59e0b"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="32" height="32" rx="11" fill="url(#stakeholder-management-a)"/>
+  <path d="M10 21l5-5 5 5-5 5-5-5z" fill="#e0f2fe"/>
+  <path d="M20 21l5-5 5 5-5 5-5-5z" fill="#fff"/>
+  <path d="M15 21h10" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+  <path d="M9 26l6 3 5-3 5 3 6-3" fill="none" stroke="#fef08a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

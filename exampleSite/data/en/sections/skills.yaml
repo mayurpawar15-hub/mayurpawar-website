@@ -3,7 +3,7 @@ section:
   name: Skills
   id: skills
   enable: true
-  weight: 2
+  weight: 3
   showOnNavbar: true
   filter: true
   # Can optionally hide the title in sections
@@ -26,7 +26,7 @@ buttons:
 # Give a summary of you each skill in the summary section.
 skills:
 - name: SAP S/4HANA Finance
-  logo: /images/sections/skills/kubernetes.png
+  logo: /images/sections/skills/sap-finance.svg
   summary: "Led SAP S/4HANA Finance implementations, migrations, and finance transformations across global organizations, with focus on SAP FICO, Universal Journal, reporting, and scalable finance architecture."
   categories: ["SAP"]
 
@@ -37,7 +37,7 @@ skills:
 #   url: "https://golang.org/"
 
 - name: Central Finance
-  logo: /images/sections/skills/cloud.png
+  logo: /images/sections/skills/central-finance.svg
   summary: "Enabled finance harmonization, replication, and real-time reporting through SAP Central Finance and enterprise finance transformation initiatives."
   categories: ["SAP"]
 
@@ -48,22 +48,22 @@ skills:
 #   url: "https://www.docker.com/"
 
 - name: Group Reporting
-  logo: /images/sections/skills/prometheus.png
+  logo: /images/sections/skills/group-reporting.svg
   summary: "Supported SAP finance reporting requirements across statutory, management, and transformation programs, aligning group reporting needs with SAP S/4HANA Finance design."
   categories: ["SAP"]
 
 - name: Program Management
-  logo: /images/sections/skills/linux.png
+  logo: /images/sections/skills/program-management.svg
   summary: "Successfully delivered complex ERP programs by managing scope, timelines, budgets, and stakeholder expectations."
   categories: ["Leadership"]
 
 - name: Team Leadership
-  logo: /images/sections/skills/git.png
+  logo: /images/sections/skills/team-leadership.svg
   summary: "Built and mentored high-performing teams, fostering collaboration, innovation, and delivery excellence."
   categories: ["Leadership"]
 
 - name: Stakeholder Management
-  logo: /images/sections/skills/c++.png
+  logo: /images/sections/skills/stakeholder-management.svg
   summary: "Partnered with business leaders and executives to align technology initiatives with strategic objectives."
   categories: ["Leadership"]
 
@@ -79,22 +79,22 @@ skills:
 #   url: "https://git-scm.com/"
 
 - name: M&A / Carve-outs
-  logo: /images/sections/skills/c++.png
+  logo: /images/sections/skills/carve-outs.svg
   summary: "Led finance workstreams for mergers, acquisitions, divestitures, and organizational separations."
   categories: ["Transformation"]
 
 - name: ERP Modernization
-  logo: /images/sections/skills/c++.png
+  logo: /images/sections/skills/erp-modernization.svg
   summary: "Transformed legacy ERP landscapes into agile, cloud-ready enterprise platforms."
   categories: ["Transformation"]
 
 - name: Process Optimization
-  logo: /images/sections/skills/c++.png
+  logo: /images/sections/skills/process-optimization.svg
   summary: "Improved operational efficiency by redesigning finance processes and implementing best practices."
   categories: ["Transformation"]
 
 - name: SAP APIs
-  logo: /images/sections/skills/git.png
+  logo: /images/sections/skills/sap-apis.svg
   summary: "Integrated SAP finance processes with enterprise applications using APIs, services, IDocs, and cloud connectivity patterns."
   categories: ["Technology"]
 
@@ -104,11 +104,11 @@ skills:
 #   categories: ["Technology"]
 
 - name: Integration Architecture
-  logo: /images/sections/skills/c++.png
+  logo: /images/sections/skills/integration-architecture.svg
   summary: "Designed scalable integration frameworks connecting SAP S/4HANA Finance with cloud and on-premise business applications."
   categories: ["Technology"]
 
 - name: AI & Automation
-  logo: /images/sections/skills/c++.png
+  logo: /images/sections/skills/ai-automation.svg
   summary: "Leveraged AI and intelligent automation to streamline business processes and enhance decision-making."
   categories: ["Technology"]

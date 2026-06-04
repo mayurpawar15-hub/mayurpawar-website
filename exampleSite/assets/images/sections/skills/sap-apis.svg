@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" role="img">
+  <defs>
+    <linearGradient id="sap-apis-a" x1="5" y1="35" x2="35" y2="5" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3b82f6"/>
+      <stop offset="1" stop-color="#22c55e"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="32" height="32" rx="10" fill="url(#sap-apis-a)"/>
+  <path d="M15 13v7M25 13v7M13 20h14v3.5a7 7 0 0 1-14 0V20z" fill="#fff"/>
+  <path d="M20 30v4" stroke="#e0f2fe" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M12 14h16" stroke="#fef08a" stroke-width="2" stroke-linecap="round"/>
+  <path d="M10 29H7m26 0h-3M20 8V6" stroke="#dbeafe" stroke-width="2" stroke-linecap="round"/>
+</svg>

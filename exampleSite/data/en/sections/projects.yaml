@@ -1,65 +1,77 @@
-# # section information
-# section:
-#   name: Projects
-#   id: projects
-#   enable: true
-#   weight: 5
-#   showOnNavbar: true
-#   # Can optionally hide the title in sections
-#   # hideTitle: true
+# section information
+section:
+  name: Projects
+  id: projects
+  enable: true
+  weight: 5
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
 
-# # filter buttons
-# buttons:
-# - name: All
-#   filter: "all"
-# - name: Professional
-#   filter: "professional"
-# - name: Academic
-#   filter: "academic"
+# filter buttons
+buttons:
+- name: All
+  filter: "all"
+- name: Professional
+  filter: "professional"
+- name: Academic
+  filter: "academic"
 # - name: Hobby
 #   filter: "hobby"
 
-# # your projects
-# projects:
-# - name: Kubernetes
-#   logo: /images/sections/projects/kubernetes.png
-#   role: Contributor
-#   timeline: "March 2018 - Present"
-#   repo: https://github.com/kubernetes/kubernetes # If your project is a public repo on GitHub, then provide this link. it will show star count.
-#   #url: ""  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
-#   summary: Production-Grade Container Scheduling and Management.
-#   tags: ["professional", "kubernetes", "cloud"]
+# your projects
+projects:
 
-# - name: Tensorflow
-#   logo: /images/sections/projects/tensorflow.png
-#   role: Developer
-#   timeline: "Jun 2018 - Present"
-#   repo: https://github.com/tensorflow/tensorflow
-#   #url: ""
-#   summary: An Open Source Machine Learning Framework for Everyone.
-#   tags: ["professional", "machine-learning"]
+- name: Media Industry Carve-Out & Finance Transformation
+  role: SAP Finance SME and Team Manager
+  timeline: "Jan 2025 2017 - Feb 2026"
+  # url: "https://www.example.com"
+  summary: Led the SAP Finance workstream for a large-scale business separation program. Directed finance data carve-out, enterprise structure redesign, cutover planning, and migration activities while ensuring business continuity, compliance, and reporting integrity across multiple business entities.
+  tags: ["professional","SAP S/4HANA", "Finance Transformation", "Carve-Out", "Data Migration"]
 
-# - name: A sample academic paper
-#   role: Team Lead
-#   timeline: "Jan 2017 - Nov 2017"
-#   url: "https://www.example.com"
-#   summary: Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eius reprehenderit animi suscipit autem eligendi esse amet aliquid error eum. Accusantium distinctio soluta aliquid quas placeat modi suscipit eligendi nisi.
-#   tags: ["academic","iot"]
+- name: Global Media & Entertainment Finance Modernization
+  # logo: /images/sections/projects/no-code.png
+  role: SAP FICO Lead
+  timeline: "Jan 2022 - Dec 2024"
+  repo: https://github.com/kelseyhightower/nocode
+  #url: ""
+  summary: Delivered innovative SAP Finance solutions including subsequent ledger and currency implementations across a complex global landscape. Led enterprise structure design, foreign currency valuation, financial controls, and multiple successful go-lives while mentoring cross-functional teams.
+  tags: ["professional", "SAP S/4HANA", "Ledger Accounting", "AFCV", "Finance Controls"]
 
-# - name: Nocode
-#   logo: /images/sections/projects/no-code.png
-#   role: Nothing
-#   timeline: "Oct 2019 - Dec 2019"
-#   repo: https://github.com/kelseyhightower/nocode
-#   #url: ""
-#   summary: The best way to write secure and reliable applications. Write nothing; deploy nowhere.
-#   tags: ["hobby", "fun"]
+- name: Global Gaming & Digital Accounting Transformation
+  # logo: /images/sections/projects/toha.png
+  # image: /images/sections/projects/toha_website.png
+  role: SAP S/4HANA Digital Accounting Consultant
+  timeline: "Jun 2019 - Dec 2021"
+  repo: https://github.com/hossainemruz/toha
+  summary: Led digital accounting and royalty management initiatives for a global entertainment organization. Delivered finance process automation, ECC-to-S/4HANA migration activities, enterprise structure design, and financial close optimization, improving royalty processing efficiency by 80%.
+  tags: ["professional", SAP S/4HANA, Digital Accounting, Royalties, Data Migration]
 
-# - name: Toha
-#   logo: /images/sections/projects/toha.png
-#   image: /images/sections/projects/toha_website.png
-#   role: Owner
-#   timeline: "Jun 2019 - Present"
-#   repo: https://github.com/hossainemruz/toha
-#   summary: A Hugo theme for personal portfolio.
-#   tags: ["hobby","hugo","theme","professional"]
+- name: Energy & Utilities Digital Transformation
+  # logo: /images/sections/projects/toha.png
+  # image: /images/sections/projects/toha_website.png
+  role: SAP Technology Analyst
+  timeline: "Oct 2016 - Jan 2017"
+  repo: https://github.com/hossainemruz/toha
+  summary: Led digital accounting and royalty management initiatives for a global entertainment organization. Delivered finance process automation, ECC-to-S/4HANA migration activities, enterprise structure design, and financial close optimization, improving royalty processing efficiency by 80%.
+  tags: ["professional", SAP Fiori, ABAP, Reporting, Utilities]
+
+- name: Integration of Sound Signature in Graphical Password Authentication System
+  # logo: /images/sections/projects/kubernetes.png
+  role: Design, Contributor, Developer
+  timeline: "Jun 20113 - Apr 2014"
+  # repo: https://github.com/kubernetes/kubernetes # If your project is a public repo on GitHub, then provide this link. it will show star count.
+  # #url: ""  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
+  summary: Developed a secure graphical password authentication system using the Cued Click Points (CCP) technique enhanced with sound signatures. The solution improves password memorability by allowing users to select click points on images and associate them with unique audio cues. This approach enhances usability, strengthens authentication security, and provides a more intuitive alternative to traditional text-based passwords.
+  tags: ["academic"]
+
+- name: Music Gallery
+  # logo: /images/sections/projects/tensorflow.png
+  role: ontributor, Developer
+  timeline: "May 2012 - Oct 2012"
+  repo: https://github.com/tensorflow/tensorflow
+  #url: ""
+  summary: Developed a user-friendly Music Gallery Management System that enables efficient management of movies and music inventory. The application allows users to search, purchase, and rent media items, while providing administrators with features for stock management, user administration, and business reporting. Designed with a simple and intuitive interface to ensure easy access to information and seamless user experience.
+  tags: ["academic"]
+
+

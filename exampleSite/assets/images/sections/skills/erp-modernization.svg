@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" role="img">
+  <defs>
+    <linearGradient id="erp-modernization-a" x1="6" y1="34" x2="34" y2="6" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0ea5e9"/>
+      <stop offset="1" stop-color="#a855f7"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="5" width="32" height="30" rx="10" fill="url(#erp-modernization-a)"/>
+  <path d="M12 24.5h15a5 5 0 0 0 .8-9.9 7 7 0 0 0-13.1 1.8A4.2 4.2 0 0 0 12 24.5z" fill="#fff"/>
+  <path d="M15 29h10" stroke="#dbeafe" stroke-width="2" stroke-linecap="round"/>
+  <path d="M27 13l2.2-2.2L31.5 13M29.2 11v6" stroke="#fef08a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M16 19h8" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,44 @@
+# section information
+section:
+  name: Career Highlights
+  id: career-highlights
+  enable: true
+  weight: 2
+  showOnNavbar: true
+  template: sections/career-highlights.html
+
+highlights:
+- title: Countries Supported
+  value: 15
+  suffix: "+"
+  icon: "fa-solid fa-globe"
+  description: Delivered SAP Finance and S/4HANA transformation programs across North America, Europe, and Asia.
+
+- title: Company Codes Optimized
+  value: 800
+  suffix: "+"
+  icon: "fa-solid fa-building-columns"
+  description: Designed and delivered finance solutions involving complex enterprise structures, ledgers, currencies, and reporting requirements.
+
+- title: End Users Trained
+  value: 50
+  suffix: "+"
+  icon: "fa-solid fa-users"
+  description: Conducted SAP Finance training, knowledge transfer sessions, and business workshops across multiple global programs.
+
+- title: Improvement in Royalty Processing
+  value: 80
+  suffix: "%"
+  icon: "fa-solid fa-chart-line"
+  description: Designed and implemented digital accounting and royalty management solutions that significantly improved operational efficiency.
+
+- title: Global Go-Lives
+  displayValue: Multiple
+  icon: "fa-solid fa-rocket"
+  description: Successfully delivered and supported multiple SAP S/4HANA implementations, rollouts, and transformation programs.
+
+- title: Years of SAP Experience
+  value: 9
+  suffix: "+"
+  icon: "fa-solid fa-award"
+  description: Specialized in SAP S/4HANA Finance, FICO, Digital Accounting, Carve-Outs, Data Migration, and Finance Transformation.
